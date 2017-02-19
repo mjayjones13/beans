@@ -1,0 +1,74 @@
+/*
+ Olive Green: AFD5AA
+ Whitish: F0F2EF
+ Dark Brown: 5C5346
+ Light Gray-Brown: A69F98
+ Reddish Brown: 8C6057
+ */
+
+a {
+    color: #AFD5AA;
+}
+
+#beans {
+    display: flex;
+    flex-direction: row;
+    font: 14px "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+.beans--Content {
+    align-items: center;
+    background-color: #F0F2EF;
+    display: flex;
+    flex: 2 1 70%;
+    flex-direction: column;
+}
+
+.beans--Header {
+    background-color: #5C5346;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+}
+
+.beans--Header .beans--Header-title {
+    color: #F0F2EF;
+    font-size: 1.5em;
+    margin: 5px;
+    padding: 5px;
+}
+
+.beans--CoffeeBump {
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.5rem;
+    color: #5C5346;
+    background-color: #A69F98;
+    border: none;
+}
+
+.beans--Menu {
+    background-color: #F0F2EF;
+    display: none; /* change to flex when enabled */
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    width: 40%;
+}
+
+.beans--Connections {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.beans--Connections .beans--Connections-list {
+    flex: 1 1 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
