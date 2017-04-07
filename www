@@ -4,7 +4,9 @@
  * Module dependencies.
  */
 
-var app = require('./lib/server/app');
+var app = require('./lib/server/app')({
+  databaseHost: "mongodb://localhost:27017/beans"
+});
 var debug = require('debug')('untitled1:server');
 var http = require('http');
 

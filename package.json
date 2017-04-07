@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./www"
+    "start": "node ./www",
+    "seed": "node ./lib/server/db/seeds/seed.js"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
@@ -15,5 +16,14 @@
     "morgan": "~1.7.0",
     "node-mongoose-validator": "^1.2.0",
     "serve-favicon": "~2.3.2"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-express-server": "^0.1.4",
+    "karma-jasmine": "^1.1.0",
+    "karma-requirejs": "^1.1.0",
+    "requirejs": "^2.3.3"
   }
 }
