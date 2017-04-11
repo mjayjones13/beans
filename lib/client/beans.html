@@ -4,10 +4,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="./js/ui/base/Control.js"></script>
     <script src="./js/ui/controls/Menu.js"></script>
+    <script src="./js/ui/controls/Header.js"></script>
+    <script src="./js/ui/controls/Notifications.js"></script>
     <script>
         function renderView() {
-            var beansView = new BeansView();
-            $("#beans").appendChild(beansView.render());
+//            Future State
+//            var beansView = new BeansView();
+//            $("#beans").appendChild(beansView.render());
+
+            // Add a Menu to the beginning of the #beans div
+            $("#beans").prepend(new Menu().render());
+
+            // Add the Header and Notifications sections to beginning of the Content div
+            $(".beans--Content").prepend(
+                new Header().render(),
+                new Notifications().render()
+            );
         }
         window.onload = renderView;
     </script>
@@ -15,12 +27,6 @@
 
 <body id="beans">
     <section class="beans--Content">
-        <header class="beans--Header">
-            <h1 class="beans--Header-title">Beans</h1>
-        </header>
-
-        <section class="beans--Notification"></section>
-
         <button class="beans--CoffeeBump">Bump</button>
     </section>
 </body>
