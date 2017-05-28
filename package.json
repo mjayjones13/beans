@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./www",
-    "seed": "node ./lib/server/db/seeds/seed.js"
+    "seed": "node ./lib/server/db/seeds/seed.js",
+    "test-client": "karma start"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
@@ -15,7 +16,8 @@
     "mongoose": "^4.8.2",
     "morgan": "~1.7.0",
     "node-mongoose-validator": "^1.2.0",
-    "serve-favicon": "~2.3.2"
+    "serve-favicon": "~2.3.2",
+    "wolfy87-eventemitter": "^5.1.0"
   },
   "devDependencies": {
     "jasmine": "^2.5.3",
