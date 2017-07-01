@@ -15,8 +15,17 @@
     <script src="js/util/data/User.js"></script>
     <script>
         function renderView() {
+            var store = new Store({
+                user: null,
+                connections: []
+            });
+
+            var beans = new BeansView({
+                store: store
+            });
+
             // Add the main menu and content sections to the UI
-            $("#beans").append(new BeansView().view());
+            $("#beans").append(beans.view());
         }
         window.onload = renderView;
     </script>
