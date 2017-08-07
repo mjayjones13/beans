@@ -4,6 +4,8 @@
 ### Getting started
 Install dependencies: `npm install`
 
+Build the webpack bundle: `npm run build` (build once) or `npm run build:dev` (watch source files)
+
 Run the server: `npm start`
 
 View Beans on [localhost:3000](http://localhost:3000), or whichever port you specified in the environment variables.
@@ -15,7 +17,7 @@ Then run: `npm run seed`
 
 ### Running Tests
 ```
-npm run test-client
+npm run test:client
 ```
 
 OR
