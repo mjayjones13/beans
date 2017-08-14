@@ -4,7 +4,7 @@
 ### Getting started
 Install dependencies: `npm install`
 
-Build the webpack bundle: `npm run build` (build once) or `npm run build:dev` (watch source files)
+Run the webpack live server: `npm run dev`
 
 Run the server: `npm start`
 
