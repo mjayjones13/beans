@@ -51,6 +51,12 @@ a {
     border: none;
 }
 
+.beans--AuthButton {
+    color: #5C5346;
+    background-color: #A69F98;
+    border: none;
+}
+
 .beans--Menu {
     background-color: #F0F2EF;
     display: none; /* change to flex when enabled */
