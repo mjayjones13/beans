@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-    entry:  "./lib/client/js/beans.js",
+    entry: "./lib/client/js/beans.js",
     output: {
         path: path.resolve(__dirname, "../../dist"),
         filename: "beans.bundle.js",
