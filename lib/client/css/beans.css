@@ -31,6 +31,9 @@ a {
     flex-direction: row;
     padding: 10px;
     width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    display: flex;
 }
 
 .beans--Header .beans--Header-title {
@@ -38,6 +41,7 @@ a {
     font-size: 1.5em;
     margin: 5px;
     padding: 5px;
+    flex: 2 0 auto;
 }
 
 .beans--CoffeeBump {
@@ -49,6 +53,16 @@ a {
     color: #5C5346;
     background-color: #A69F98;
     border: none;
+}
+
+.button-parent {
+    flex-direction: row;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.beans--JoinButton {
+    flex: 0 0 auto;
 }
 
 .beans--AuthButton {
